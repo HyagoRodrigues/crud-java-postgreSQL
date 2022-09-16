@@ -1,4 +1,3 @@
-import javax.sound.midi.Soundbank;
 import java.sql.*;
 import java.util.Properties;
 import java.util.Scanner;
@@ -159,6 +158,7 @@ public class Utils {
                     ResultSet.TYPE_SCROLL_SENSITIVE,
                     ResultSet.CONCUR_READ_ONLY
             );
+
             produto.setInt(1, id);
             ResultSet res = produto.executeQuery();
 
